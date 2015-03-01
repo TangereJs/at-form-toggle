@@ -10,7 +10,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 :host {
   display: inline-block;
 }
-
 :host(:focus) {
   outline: none;
 }
@@ -20,23 +19,18 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 .toggle-bar {
   background-color: #000000;
 }
-
 .toggle-button {
   background-color: #f1f1f1;
 }
-
 [checked] .toggle {
-  background-color: #0f9d58;
+  background-color: #4CAF50;
 }
-
 .toggle-ink {
   color: #bbb;
 }
-
 [checked] .toggle-ink {
   color: #0f9d58;
 }
-
 /* ID selectors should not be overriden by users. */
 
 #toggleContainer {
@@ -45,22 +39,18 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   height: 14px;
   display: inline-block;
 }
-
 #label {
   padding-left: 1em;
   display: inline-block;
 }
-
-  #label[disabled] {
-    opacity: 0.3;
-    pointer-events: none;
-  }
-
+#label[disabled] {
+  opacity: 0.3;
+  pointer-events: none;
+}
 #toggleContainer[disabled] {
   opacity: 0.3;
   pointer-events: none;
 }
-
 #toggleBar {
   position: absolute;
   height: 100%;
@@ -70,11 +60,9 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   opacity: 0.26;
   transition: background-color linear .08s;
 }
-
 [checked] #toggleBar {
   opacity: 0.5;
 }
-
 #toggleButton {
   position: absolute;
   top: -3px;
@@ -85,17 +73,14 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   transition: -webkit-transform linear .08s, background-color linear .08s;
   transition: transform linear .08s, background-color linear .08s;
 }
-
-  #toggleButton.dragging {
-    -webkit-transition: none;
-    transition: none;
-  }
-
+#toggleButton.dragging {
+  -webkit-transition: none;
+  transition: none;
+}
 [checked] #toggleButton {
   -webkit-transform: translate(16px, 0);
   transform: translate(16px, 0);
 }
-
 #ink {
   position: absolute;
   top: -14px;
